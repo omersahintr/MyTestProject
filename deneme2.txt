@@ -1,0 +1,7 @@
+import pyqrcode
+
+
+url = input("Metin giriniz: ")
+
+qr_cod = pyqrcode.create(url)
+qr_cod.svg("qr.svg",scale=8)
